@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="syle.css">
+</head>
+<body>
+    <div class="window">
+        <div class="container">
+                <img class='photo' src="1.jpeg" alt="">
+                <img class='photo' src="2.jpeg" alt="">
+                <img class='photo' src="3.jpg" alt="">
+        </div>
+        <button class="do_tylu" type="button">&lt;</button>
+        <button class="do_przodu" type="button">&gt;</button>
+    </div>
+
+    <script>
+    let poj = document.querySelector('.container')
+    poj.addEventListener('click',
+    function(e)
+    {
+        e.target.classList.add('nowa')
+    }
+        )   
+    </script>
+</body>
+</html>
